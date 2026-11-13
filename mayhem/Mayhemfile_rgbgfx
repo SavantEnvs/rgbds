@@ -1,0 +1,8 @@
+project: savantenvs/rgbds
+target: rgbgfx
+cmds:
+  - cmd: /mayhem/build-mayhem/rgbgfx -o out.2bpp @@
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/rgbgfx/testsuite

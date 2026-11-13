@@ -1,0 +1,8 @@
+project: savantenvs/rgbds
+target: rgblink
+cmds:
+  - cmd: /mayhem/build-mayhem/rgblink -o out.gb @@
+    timeout: 5
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/rgblink/testsuite
